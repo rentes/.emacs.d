@@ -8,9 +8,9 @@
 (set-buffer-file-coding-system 'unix)
 
 ; load-paths
-(add-to-list 'load-path "c:/users/0930/.emacs.d/lisp/")
+(add-to-list 'load-path "~/.emacs.d/lisp/")
 ; theme path
-(add-to-list 'custom-theme-load-path "c:/users/0930/.emacs.d/themes")
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 ; other customizations
 (setq auto-save-default nil)
 (delete-selection-mode 1)
