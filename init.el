@@ -2,8 +2,9 @@
 ; ==========================================================================
 ; load-path
 ; ==========================================================================
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/"))
-
+(add-to-list 'load-path "~/.emacs.d/")
+(let ((default-directory "~/.emacs.d/lisp/"))
+      (normal-top-level-add-subdirs-to-load-path))
 ; ==========================================================================
 ; Variables configured via the interactive 'customize' interface
 ; get recorded on custom.el file
