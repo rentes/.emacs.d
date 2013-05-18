@@ -38,10 +38,4 @@
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
 			 ("marmalade" . "http://marmalade-repo.org/packages/")
 			 ("elpa" . "http://tromey.com/elpa/")))
-; ==========================================================================
-; bind keys customization
-; ==========================================================================
-; here is a nice cat!
-; see https://github.com/afroisalreadyinu/gimme-cat for more info
-(require 'gimme-cat)
-(global-set-key "\C-c\k" 'gimme-cat)
+
