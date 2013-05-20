@@ -38,4 +38,11 @@
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
 			 ("marmalade" . "http://marmalade-repo.org/packages/")
 			 ("elpa" . "http://tromey.com/elpa/")))
-
+; ==========================================================================
+; backup policy
+; ==========================================================================
+(setq make-backup-files nil) ; stop creating those backup~ files
+(setq auto-save-default nil) ; stop creating those #auto-save# files
+(setq backup-by-copying t) ; stop backup from changing file creation date 
+			   ; of original file
+(setq backup-directory-alist '(("" . "~/.emacs.d/emacs-backup")))
