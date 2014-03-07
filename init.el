@@ -10,11 +10,28 @@
 ; ==========================================================================
 (setq inhibit-startup-message t)
 ; ==========================================================================
-; load-path
+; load-path (added elpa/ and lisp/ recursively)
 ; ==========================================================================
 (add-to-list 'load-path "~/.emacs.d/")
+(let ((default-directory "~/.emacs.d/elpa/"))
+      (normal-top-level-add-subdirs-to-load-path))
 (let ((default-directory "~/.emacs.d/lisp/"))
       (normal-top-level-add-subdirs-to-load-path))
+; ==========================================================================
+; load custom themes
+; ==========================================================================
+(require 'dash)
+(require 's)
+
+(-each
+   (-map
+      (lambda (item)
+      (format "~/.emacs.d/elpa/%s" item))
+   (-filter
+      (lambda (item) (s-contains? "theme" item))
+      (directory-files "~/.emacs.d/elpa/")))
+   (lambda (item)
+      (add-to-list 'custom-theme-load-path item)))
 ; ==========================================================================
 ; Variables configured via the interactive 'customize' interface
 ; get recorded on custom.el file
