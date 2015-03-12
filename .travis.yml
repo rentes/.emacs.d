@@ -14,9 +14,6 @@ before_install:
           emacs24 emacs24-el emacs24-common-non-dfsg &&
       sudo apt-get install -qq python;
     fi
-  - curl -fsSkL https://raw.github.com/rejeep/carton/master/go | sh
-  - export PATH="/home/travis/.carton/bin:$PATH"
-  - carton
 env:
   - EMACS=emacs24 TAGS="--tags ~@requires-e24-3"
   - EMACS=emacs-snapshot TAGS=""
