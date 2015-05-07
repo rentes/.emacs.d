@@ -1,4 +1,16 @@
 *.elc
 .rvmrc
 /TAGS
-elpa
+elpa/
+.cask/
+.python-environments/
+.smex-items
+ac-comphist.dat
+auto-save-list/
+backups/
+eshell/
+lisp/
+places
+tramp
+url/
+xkcd/
