@@ -98,10 +98,11 @@
 ; ====================================================================
 
 (require 'powerline)
-;(require 'moe-theme)
+(require 'moe-theme)
+(require 'moe-theme-switcher)
 ;(moe-dark)
-;(load-theme 'flatui t)
-(load-theme 'zenburn t)
+(moe-light)
+(powerline-moe-theme)
 
 ; ====================================================================
 ; Org Mode customizations for better appearance
