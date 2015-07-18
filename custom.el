@@ -100,8 +100,8 @@
 (require 'powerline)
 (require 'moe-theme)
 (require 'moe-theme-switcher)
-;(moe-dark)
-(moe-light)
+(moe-dark)
+;(moe-light)
 (powerline-moe-theme)
 
 ; ====================================================================
@@ -137,7 +137,7 @@
 ; ====================================================================
 ; w3m settings - see http://www.emacswiki.org/emacs/emacs-w3m
 ; ====================================================================
-(require 'w3m-load)
+;(require 'w3m-load)
 
 ; ====================================================================
 ; C/C++ Programming
@@ -145,40 +145,40 @@
 ; http://truongtx.me/2013/04/12/emacs-setting-up-perfect-cc-programming-environment/
 ; for further details
 ; ====================================================================
-(require 'cc-mode)
-(setq-default c-basic-offset 4 c-default-style "linux")
-(setq-default tab-width 4 indent-tabs-mode t)
-(define-key c-mode-base-map (kbd "RET") 'newline-and-indent)
+;; (require 'cc-mode)
+;; (setq-default c-basic-offset 4 c-default-style "linux")
+;; (setq-default tab-width 4 indent-tabs-mode t)
+;; (define-key c-mode-base-map (kbd "RET") 'newline-and-indent)
 
 
-;; (add-to-list 'load-path
-;; 			 "~/.emacs.d/elpa/yasnippet-20150413.1403")
-;; (require 'yasnippet)
-;; (yas-global-mode 1)
+;; ;; (add-to-list 'load-path
+;; ;; 			 "~/.emacs.d/elpa/yasnippet-20150413.1403")
+;; ;; (require 'yasnippet)
+;; ;; (yas-global-mode 1)
 
 
-(require 'auto-complete-config)
-(add-to-list 'ac-dictionary-directories
-			 "~/.emacs.d/elpa/auto-complete-20150408.1132/dict")
-(ac-config-default)
-(setq ac-ignore-case nil)
-(ac-set-trigger-key "TAB")
-(ac-set-trigger-key "<tab>")
-(require 'auto-complete-c-headers)
-(define-key c++-mode-map (kbd "C-S-<return>") 'ac-complete-c-headers)
-(require 'member-functions)
-(setq mf--source-file-extension "cpp")
-(require 'autopair)
-(autopair-global-mode 1)
-(setq autopair-autowrap t)
-(require 'ecb)
-(require 'ecb-autoloads)
-(setq ecb-layout-name "left8")
-(setq ecb-examples-bufferinfo-buffer-name nil)
-(setq ecb-show-sources-in-directories-buffer 'always)
-(setq ecb-compile-window-height 12)
-(require 'flymake)
-(add-hook 'find-file-hook 'flymake-find-file-hook)
+;; (require 'auto-complete-config)
+;; (add-to-list 'ac-dictionary-directories
+;; 			 "~/.emacs.d/elpa/auto-complete-20150408.1132/dict")
+;; (ac-config-default)
+;; (setq ac-ignore-case nil)
+;; (ac-set-trigger-key "TAB")
+;; (ac-set-trigger-key "<tab>")
+;; (require 'auto-complete-c-headers)
+;; (define-key c++-mode-map (kbd "C-S-<return>") 'ac-complete-c-headers)
+;; ;(require 'member-functions)
+;; (setq mf--source-file-extension "cpp")
+;; (require 'autopair)
+;; (autopair-global-mode 1)
+;; (setq autopair-autowrap t)
+;; (require 'ecb)
+;; (require 'ecb-autoloads)
+;; (setq ecb-layout-name "left8")
+;; (setq ecb-examples-bufferinfo-buffer-name nil)
+;; (setq ecb-show-sources-in-directories-buffer 'always)
+;; (setq ecb-compile-window-height 12)
+;; (require 'flymake)
+;; (add-hook 'find-file-hook 'flymake-find-file-hook)
 ;(require 'flyspell)
 ;(setq flyspell-issue-message-flg nil)
 ;; (add-hook 'enh-ruby-mode-hook
@@ -228,10 +228,10 @@
 ; ====================================================================
 ; Rails
 ; ====================================================================
-(setq load-path (cons
-                 (expand-file-name "~/.emacs.d/lisp/rails-reloaded")
-                 load-path))
-(require 'rails-autoload)
+;; (setq load-path (cons
+;;                  (expand-file-name "~/.emacs.d/lisp/rails-reloaded")
+;;                  load-path))
+;; (require 'rails-autoload)
 
 ; ====================================================================
 ; Execute the current file
