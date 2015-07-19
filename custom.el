@@ -29,8 +29,8 @@
 (setq x-select-enable-clipboard t)
 
 ;; Tabbar/ruler
-(tabbar-mode 1)
-(set-face-attribute 'default nil :height 110)
+;(tabbar-mode 1)
+;(set-face-attribute 'default nil :height 110)
 ;(set-face-attribute 'linum nil :height 90)
 
 ; ====================================================================
@@ -70,15 +70,6 @@
 ; load library
 ; ====================================================================
 (load-library "iso-transl")
-
-; ====================================================================
-; python jedi
-; ====================================================================
-(add-hook 'python-mode-hook 'auto-complete-mode)
-(add-hook 'python-mode-hook 'jedi:setup)
-(setq jedi:setup-keys t)
-(setq jedi:complete-on-dot t)
-
 
 ; ====================================================================
 ; org-mode workflow states
@@ -127,7 +118,7 @@
 (cua-mode)
 
 ; ====================================================================
-; Auto-fill Mode
+; Remove Auto-fill Mode
 ; ====================================================================
 (auto-fill-mode -1)
 (remove-hook 'text-mode-hook #'turn-on-auto-fill)
@@ -138,55 +129,6 @@
 ; w3m settings - see http://www.emacswiki.org/emacs/emacs-w3m
 ; ====================================================================
 ;(require 'w3m-load)
-
-; ====================================================================
-; C/C++ Programming
-; http://truongtx.me/2013/03/10/emacs-setting-up-perfect-environment-for-cc-programming/
-; http://truongtx.me/2013/04/12/emacs-setting-up-perfect-cc-programming-environment/
-; for further details
-; ====================================================================
-;; (require 'cc-mode)
-;; (setq-default c-basic-offset 4 c-default-style "linux")
-;; (setq-default tab-width 4 indent-tabs-mode t)
-;; (define-key c-mode-base-map (kbd "RET") 'newline-and-indent)
-
-
-;; ;; (add-to-list 'load-path
-;; ;; 			 "~/.emacs.d/elpa/yasnippet-20150413.1403")
-;; ;; (require 'yasnippet)
-;; ;; (yas-global-mode 1)
-
-
-;; (require 'auto-complete-config)
-;; (add-to-list 'ac-dictionary-directories
-;; 			 "~/.emacs.d/elpa/auto-complete-20150408.1132/dict")
-;; (ac-config-default)
-;; (setq ac-ignore-case nil)
-;; (ac-set-trigger-key "TAB")
-;; (ac-set-trigger-key "<tab>")
-;; (require 'auto-complete-c-headers)
-;; (define-key c++-mode-map (kbd "C-S-<return>") 'ac-complete-c-headers)
-;; ;(require 'member-functions)
-;; (setq mf--source-file-extension "cpp")
-;; (require 'autopair)
-;; (autopair-global-mode 1)
-;; (setq autopair-autowrap t)
-;; (require 'ecb)
-;; (require 'ecb-autoloads)
-;; (setq ecb-layout-name "left8")
-;; (setq ecb-examples-bufferinfo-buffer-name nil)
-;; (setq ecb-show-sources-in-directories-buffer 'always)
-;; (setq ecb-compile-window-height 12)
-;; (require 'flymake)
-;; (add-hook 'find-file-hook 'flymake-find-file-hook)
-;(require 'flyspell)
-;(setq flyspell-issue-message-flg nil)
-;; (add-hook 'enh-ruby-mode-hook
-;; 		  (lambda () (flyspell-prog-mode)))
-;; (add-hook 'web-mode-hook
-;; 		  (lambda () (flyspell-prog-mode)))
-;; flyspell mode breaks auto-complete mode without this.
-;(ac-flyspell-workaround)
 
 ; ====================================================================
 ; Highlight Indentation
