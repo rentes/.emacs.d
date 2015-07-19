@@ -28,11 +28,6 @@
 ;; Enable copy and pasting from clipboard
 (setq x-select-enable-clipboard t)
 
-;; Tabbar/ruler
-;(tabbar-mode 1)
-;(set-face-attribute 'default nil :height 110)
-;(set-face-attribute 'linum nil :height 90)
-
 ; ====================================================================
 ; change frame title to include complete path on open file
 ; ====================================================================
