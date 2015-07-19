@@ -131,51 +131,6 @@
 ;(require 'w3m-load)
 
 ; ====================================================================
-; Highlight Indentation
-; ====================================================================
-(require 'highlight-indentation)
-(add-hook 'enh-ruby-mode-hook
-		  (lambda () (highlight-indentation-current-column-mode)))
-(add-hook 'coffee-mode-hook
-		  (lambda () (highlight-indentation-current-column-mode)))
-
-
-; ==========================================================================
-; Ruby (Enhanced Ruby Mode)
-; ==========================================================================
-
-(add-to-list 'auto-mode-alist
-             '("\\.\\(?:gemspec\\|irbrc\\|gemrc\\|rake\\|rb\\|ru\\|thor\\)\\'" .
-			   enh-ruby-mode))
-(add-to-list 'auto-mode-alist
-             '("\\(Capfile\\|Gemfile\\(?:\\.[a-zA-Z0-9._-]+\\)?\\|[rR]akefile\\)\\'" .
-			   enh-ruby-mode))
-
-(add-to-list 'ac-modes 'enh-ruby-mode)
-(add-to-list 'ac-modes 'web-mode)
-(add-hook 'ruby-mode-hook 'robe-mode)
-(add-hook 'enh-ruby-mode-hook 'robe-mode)
-(add-hook 'robe-mode-hook 'ac-robe-setup)
-(remove-hook 'enh-ruby-mode-hook 'erm-define-faces)
-(add-hook 'enh-ruby-mode-hook 'robe-mode)
-(add-hook 'enh-ruby-mode-hook 'yard-mode)
-(require 'ruby-end)
-
-(require 'smartparens-config)
-(require 'smartparens-ruby)
-(sp-with-modes '(rhtml-mode)
-               (sp-local-pair "<" ">")
-               (sp-local-pair "<%" "%>"))
-
-; ====================================================================
-; Rails
-; ====================================================================
-;; (setq load-path (cons
-;;                  (expand-file-name "~/.emacs.d/lisp/rails-reloaded")
-;;                  load-path))
-;; (require 'rails-autoload)
-
-; ====================================================================
 ; Execute the current file
 ; ====================================================================
 (defun run-current-file()
