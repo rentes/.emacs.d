@@ -21,5 +21,5 @@
 ; Variables configured via the interactive 'customize' interface
 ; get recorded on custom.el file
 ; ==========================================================================
-(setq custom-file "custom.el")
+(setq custom-file "~/.emacs.d/custom.el")
 (load custom-file)

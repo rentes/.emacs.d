@@ -76,18 +76,14 @@
       '(("WORKING" . (:foreground "light blue" :weight bold))
 	("VERIFY" . (:foreground "yellow" :weight bold))))
 
-
-(setq-default fill-column 80)
-
 ; ====================================================================
 ; load theme
 ; ====================================================================
-
-(require 'powerline)
 (require 'moe-theme)
-(require 'moe-theme-switcher)
+;(require 'moe-theme-switcher)
 (moe-dark)
 ;(moe-light)
+(require 'powerline)
 (powerline-moe-theme)
 
 ; ====================================================================
@@ -100,25 +96,9 @@
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 
 ; ====================================================================
-; fill column indicator (vertical line on the 80th column)
-; ====================================================================
-(require 'fill-column-indicator)
-(setq fci-rule-color "darkgrey")
-(fci-mode)
-
-
-; ====================================================================
 ; CUA Mode
 ; ====================================================================
 (cua-mode)
-
-; ====================================================================
-; Remove Auto-fill Mode
-; ====================================================================
-(auto-fill-mode -1)
-(remove-hook 'text-mode-hook #'turn-on-auto-fill)
-
-(global-visual-line-mode t)
 
 ; ====================================================================
 ; Execute the current file
@@ -182,7 +162,6 @@ If the file is emacs lisp, run the byte compiled version if exist."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(linum ((t (:background "#3F3F3F" :foreground "#9FC59F" :height 0.9 :width normal :family "Terminus"))))
  '(org-done ((t (:foreground "#AFD8AF" :weight normal))))
  '(org-level-1 ((t (:inherit variable-pitch :foreground "#DFAF8F" :weight bold :height 1.0 :family "Terminus"))))
  '(org-level-2 ((t (:inherit variable-pitch :foreground "#859900" :weight semi-bold :height 0.9 :family "Terminus"))))
@@ -196,3 +175,4 @@ If the file is emacs lisp, run the byte compiled version if exist."
  '(org-priority ((t (:inherit font-lock-keyword-face :weight normal))))
  '(org-tag ((t (:weight bold))))
  '(org-todo ((t (:foreground "#CC9393" :weight normal)))))
+
