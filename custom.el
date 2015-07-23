@@ -101,6 +101,30 @@
 (cua-mode)
 
 ; ====================================================================
+; Highlight indentation
+; ====================================================================
+(require 'highlight-indentation)
+(add-hook 'enh-ruby-mode-hook
+(lambda () (highlight-indentation-current-column-mode)))
+
+(add-hook 'coffee-mode-hook
+(lambda () (highlight-indentation-current-column-mode)))
+
+; ====================================================================
+; Flyspell
+; ====================================================================
+(require 'flyspell)
+(setq flyspell-issue-message-flag nil)
+(add-hook 'enh-ruby-mode-hook
+(lambda () (flyspell-prog-mode)))
+
+(add-hook 'web-mode-hook
+(lambda () (flyspell-prog-mode)))
+
+(require 'auto-complete)
+(ac-flyspell-workaround)
+
+; ====================================================================
 ; Execute the current file
 ; ====================================================================
 (defun run-current-file()
@@ -149,13 +173,13 @@ If the file is emacs lisp, run the byte compiled version if exist."
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
-	("0ba649556dc51762e6794b92017f6f7406754ae3136eafef686d81c6da176cc5" "789844278c5a75283b5015c1fc7bebe7e4cf97843b8f8cffe21fafa05e81e90a" "282606e51ef2811142af5068bd6694b7cf643b27d63666868bc97d04422318c1" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "42ccd5eadda3546a89026b94794df7f4addadf25417b96917cf9db2f892b25a4" default)))
+    ("95a6ac1b01dcaed4175946b581461e16e1b909d354ada79770c0821e491067c6" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "0ba649556dc51762e6794b92017f6f7406754ae3136eafef686d81c6da176cc5" "789844278c5a75283b5015c1fc7bebe7e4cf97843b8f8cffe21fafa05e81e90a" "282606e51ef2811142af5068bd6694b7cf643b27d63666868bc97d04422318c1" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "42ccd5eadda3546a89026b94794df7f4addadf25417b96917cf9db2f892b25a4" default)))
  '(global-hl-line-mode t)
  '(global-linum-mode t)
  '(org-todo-keyword-faces
    (quote
-	(("WORKING" :foreground "light blue" :weight normal)
-	 ("VERIFY" :foreground "yellow" :weight normal)))))
+    (("WORKING" :foreground "light blue" :weight normal)
+     ("VERIFY" :foreground "yellow" :weight normal)))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
