@@ -166,6 +166,15 @@ If the file is emacs lisp, run the byte compiled version if exist."
 	  (message "No recognized program file suffix for this file.")
 	  ))))
 
+; ====================================================================
+; Load Ruby customizations
+; ====================================================================
+(load "~/.emacs.d/ruby")
+; ====================================================================
+; Load Rails customizations
+; ====================================================================
+(load "~/.emacs.d/rails")
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
