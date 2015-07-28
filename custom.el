@@ -169,6 +169,7 @@ If the file is emacs lisp, run the byte compiled version if exist."
 ; ====================================================================
 ; fci
 ; ====================================================================
+(require 'fill-column-indicator)
 (fci-mode)
 
 ; ====================================================================
@@ -187,30 +188,12 @@ If the file is emacs lisp, run the byte compiled version if exist."
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
-    ("fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" "40134952d3c31bd2494264f3702fac19f9f26f8f9cb6f4cc641d77a3c93b66f8" "95a6ac1b01dcaed4175946b581461e16e1b909d354ada79770c0821e491067c6" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "0ba649556dc51762e6794b92017f6f7406754ae3136eafef686d81c6da176cc5" "789844278c5a75283b5015c1fc7bebe7e4cf97843b8f8cffe21fafa05e81e90a" "282606e51ef2811142af5068bd6694b7cf643b27d63666868bc97d04422318c1" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "42ccd5eadda3546a89026b94794df7f4addadf25417b96917cf9db2f892b25a4" default)))
- '(global-hl-line-mode t)
- '(global-linum-mode t)
- '(org-todo-keyword-faces
-   (quote
-    (("WORKING" :foreground "light blue" :weight normal)
-     ("VERIFY" :foreground "yellow" :weight normal)))))
+    ("40134952d3c31bd2494264f3702fac19f9f26f8f9cb6f4cc641d77a3c93b66f8" default))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(org-done ((t (:foreground "#AFD8AF" :weight normal))))
- '(org-level-1 ((t (:inherit variable-pitch :foreground "#DFAF8F" :weight bold :height 1.0 :family "Terminus"))))
- '(org-level-2 ((t (:inherit variable-pitch :foreground "#859900" :weight semi-bold :height 0.9 :family "Terminus"))))
- '(org-level-3 ((t (:inherit variable-pitch :foreground "#268bd2" :weight bold :height 0.85 :family "Terminus"))))
- '(org-level-4 ((t (:inherit variable-pitch :foreground "#b58900" :weight bold :height 0.8 :family "Terminus"))))
- '(org-level-5 ((t (:foreground "#93E0E3" :family "Terminus"))))
- '(org-level-6 ((t (:foreground "#9FC59F" :family "Terminus"))))
- '(org-level-7 ((t (:foreground "#8C5353" :family "Terminus"))))
- '(org-level-8 ((t (:foreground "#4C7073" :family "Terminus"))))
- '(org-link ((t (:foreground "#D0BF8F" :underline t :family "Terminus"))))
- '(org-priority ((t (:inherit font-lock-keyword-face :weight normal))))
- '(org-tag ((t (:weight bold))))
- '(org-todo ((t (:foreground "#CC9393" :weight normal)))))
+ )
 
