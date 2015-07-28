@@ -170,7 +170,7 @@ If the file is emacs lisp, run the byte compiled version if exist."
 ; fci
 ; ====================================================================
 (require 'fill-column-indicator)
-(fci-mode)
+(add-hook 'after-change-major-mode-hook 'fci-mode)
 
 ; ====================================================================
 ; Load Ruby customizations
