@@ -188,7 +188,7 @@ If the file is emacs lisp, run the byte compiled version if exist."
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
-    ("40134952d3c31bd2494264f3702fac19f9f26f8f9cb6f4cc641d77a3c93b66f8" default))))
+    ("ad86686d808c718244a9a43e073eb520f5304bef8d4969269d7efe873b05272b" "40134952d3c31bd2494264f3702fac19f9f26f8f9cb6f4cc641d77a3c93b66f8" default))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
