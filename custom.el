@@ -18,6 +18,7 @@
 (setq show-paren-delay 0)
 (show-paren-mode t)
 (setq show-paren-style 'parenthesis)
+(defalias 'yes-or-no-p 'y-or-n-p)
 ; make mouse pointer stay out of the way of editing
 (if (display-mouse-p) (mouse-avoidance-mode 'animate))
 
