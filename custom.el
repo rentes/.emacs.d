@@ -47,7 +47,7 @@
 ; An alist of archives from which to fetch
 ; ====================================================================
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-			 ("marmalade" . "https://marmalade-repo.org/packages/")
+			 ("marmalade" . "http://marmalade-repo.org/packages/")
 			 ("melpa" . "http://melpa.milkbox.net/packages/")
 			 ("elpa" . "http://tromey.com/elpa/")))
 ; ====================================================================
@@ -62,6 +62,7 @@
 ; tramp settings
 ; ====================================================================
 (setq tramp-verbose 10)
+(setq tramp-default-method "ssh")
 ; ====================================================================
 ; load library
 ; ====================================================================
@@ -174,6 +175,22 @@ If the file is emacs lisp, run the byte compiled version if exist."
 (add-hook 'after-change-major-mode-hook 'fci-mode)
 
 ; ====================================================================
+; Interactively Do Things mode
+; ====================================================================
+(require 'ido)
+(ido-mode t)
+
+; ====================================================================
+; Auto-complete mode
+; ====================================================================
+(require 'auto-complete)
+(add-to-list 'ac-dictionary-directories
+             "~/.emacs.d/elpa/auto-complete-20150618.1949/dict/")
+(require 'auto-complete-config)
+(ac-config-default)
+(global-auto-complete-mode t)
+
+; ====================================================================
 ; Load Ruby customizations
 ; ====================================================================
 (load "~/.emacs.d/ruby")
@@ -181,6 +198,11 @@ If the file is emacs lisp, run the byte compiled version if exist."
 ; Load Rails customizations
 ; ====================================================================
 (load "~/.emacs.d/rails")
+
+; ====================================================================
+; Load Python customizations
+; ====================================================================
+(load "~/.emacs.d/python")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
