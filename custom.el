@@ -193,16 +193,16 @@ If the file is emacs lisp, run the byte compiled version if exist."
 ; ====================================================================
 ; Load Ruby customizations
 ; ====================================================================
-;(load "~/.emacs.d/ruby")
+(load "~/.emacs.d/ruby")
 ; ====================================================================
 ; Load Rails customizations
 ; ====================================================================
-;(load "~/.emacs.d/rails")
+(load "~/.emacs.d/rails")
 
 ; ====================================================================
 ; Load Python customizations
 ; ====================================================================
-;(load "~/.emacs.d/python")
+(load "~/.emacs.d/python")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
