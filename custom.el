@@ -80,7 +80,7 @@
 ; load theme
 ; ====================================================================
 (require 'moe-theme)
-;(require 'moe-theme-switcher)
+(require 'moe-theme-switcher)
 (moe-dark)
 ;(moe-light)
 (require 'powerline)

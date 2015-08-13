@@ -50,9 +50,9 @@
 (setq compilation-scroll-output 'first-error)
 
 ;; Projectile mode
-(require 'projectile)
-(projectile-global-mode)
-(setq projectile-completion-system 'grizzl)
+;; (require 'projectile)
+;; (projectile-global-mode)
+;; (setq projectile-completion-system 'grizzl)
 
 ;; Prevent emacs from adding the encoding line at the top of the file
 (setq ruby-insert-encoding-magic-comment nil)
