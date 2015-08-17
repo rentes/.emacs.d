@@ -21,6 +21,10 @@ tramp
 
 # elpa packages
 elpa/
+elpa/archives/elpa/archive-contents
+elpa/archives/gnu/archive-contents
+elpa/archives/marmalade/archive-contents
+elpa/archives/melpa/archive-contents
 
 # reftex files
 *.rel
