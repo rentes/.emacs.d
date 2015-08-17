@@ -189,6 +189,11 @@ If the file is emacs lisp, run the byte compiled version if exist."
 (global-auto-complete-mode t)
 
 ; ====================================================================
+; Emoji
+; ====================================================================
+(add-to-list 'company-backends 'company-emoji)
+
+; ====================================================================
 ; Load Ruby customizations
 ; ====================================================================
 (load "~/.emacs.d/ruby")
