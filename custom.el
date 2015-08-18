@@ -79,12 +79,16 @@
 ; ====================================================================
 ; load theme
 ; ====================================================================
-(require 'moe-theme)
-;(require 'moe-theme-switcher)
-(moe-dark)
-;(moe-light)
-(require 'powerline)
-(powerline-moe-theme)
+; (require 'moe-theme)
+; (require 'moe-theme-switcher)
+; (moe-dark)
+; (moe-light)
+; (require 'powerline)
+; (powerline-moe-theme)
+
+(load-theme 'material t)
+(load "~/.emacs.d/lisp/theming.el")
+(powerline-spacemacs-imitation-theme)
 
 ; ====================================================================
 ; Org Mode customizations for better appearance
@@ -191,7 +195,8 @@ If the file is emacs lisp, run the byte compiled version if exist."
 ; ====================================================================
 ; Emoji
 ; ====================================================================
-(add-to-list 'company-backends 'company-emoji)
+;; (company-emoji-init)
+;; (add-to-list 'company-backends 'company-emoji)
 
 ; ====================================================================
 ; Load Ruby customizations
@@ -214,11 +219,7 @@ If the file is emacs lisp, run the byte compiled version if exist."
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
-    ("ad86686d808c718244a9a43e073eb520f5304bef8d4969269d7efe873b05272b" "40134952d3c31bd2494264f3702fac19f9f26f8f9cb6f4cc641d77a3c93b66f8" default)))
- '(tramp-default-method "ssh")
- '(tramp-ssh-controlmaster-options
-   "-o ControlMaster=auto -o ControlPath='~/.ssh/controlmasters/%r@%h:%p' -o ControlPersist=10m")
- '(tramp-verbose 10))
+    ("4a162cd971cf3c059e827d6b5aa0bd07488cb5995782c0fa0ce20621bbc4a596" default))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
