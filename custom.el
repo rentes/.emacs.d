@@ -79,16 +79,11 @@
 ; ====================================================================
 ; load theme
 ; ====================================================================
-; (require 'moe-theme)
-; (require 'moe-theme-switcher)
-; (moe-dark)
-; (moe-light)
-; (require 'powerline)
-; (powerline-moe-theme)
-
-(load-theme 'material t)
-(load "~/.emacs.d/lisp/theming.el")
-(powerline-spacemacs-imitation-theme)
+(require 'moe-theme)
+;(require 'moe-theme-switcher)
+(moe-dark)
+(require 'powerline)
+(powerline-moe-theme)
 
 ; ====================================================================
 ; Org Mode customizations for better appearance
