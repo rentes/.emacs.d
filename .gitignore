@@ -4,7 +4,8 @@
 /.emacs.desktop
 /.emacs.desktop.lock
 *.elc
-auto-save-list
+/auto-save-list/
+/desktop/*
 tramp
 .\#*
 
@@ -16,15 +17,10 @@ tramp
 *_flymake.*
 
 # eshell files
-/eshell/history
-/eshell/lastdir
+/eshell/*
 
 # elpa packages
-elpa/
-elpa/archives/elpa/archive-contents
-elpa/archives/gnu/archive-contents
-elpa/archives/marmalade/archive-contents
-elpa/archives/melpa/archive-contents
+/elpa/
 
 # reftex files
 *.rel
@@ -37,16 +33,16 @@ elpa/archives/melpa/archive-contents
 
 .rvmrc
 /TAGS
-.python-environments/
+/.python-environments/
 .smex-items
 ac-comphist.dat
-backups/
-emacs-backup/
-lisp/
+/backups/
+/emacs-backup/
+/lisp/
 places
 tramp
-url/
-xkcd/
-var/
+/url/
+/xkcd/
+/var/
 projectile*
 ido.last
