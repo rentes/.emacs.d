@@ -86,9 +86,15 @@
        ((:keywords "point" "location")
 	(:url . "https://github.com/abo-abo/avy"))])
  (beacon .
+<<<<<<< HEAD
 	 [(0 5 1)
 	  ((seq
 	    (1 11)))
+=======
+	 [(0 3)
+	  ((seq
+	    (1 9)))
+>>>>>>> origin/master
 	  "Highlight the cursor whenever the window scrolls" single
 	  ((:url . "https://github.com/Malabarba/beacon")
 	   (:keywords "convenience"))])
@@ -252,7 +258,11 @@
 	     ((:url . "http://elpa.gnu.org/packages/ediprolog.html")
 	      (:keywords "languages" "processes"))])
  (el-search .
+<<<<<<< HEAD
 	    [(0 1)
+=======
+	    [(0 0 3)
+>>>>>>> origin/master
 	     ((emacs
 	       (25)))
 	     "Expression based incremental search for emacs-lisp-mode" single
@@ -622,7 +632,15 @@
 	   ((:url . "https://github.com/Malabarba/spinner.el")
 	    (:keywords "processes" "mode-line"))])
  (stream .
+<<<<<<< HEAD
 	 [(2 0 2)
+=======
+<<<<<<< HEAD
+	 [(2 0 1)
+=======
+	 [(1 0 1)
+>>>>>>> 521e9ddd3fec1b19176957c1998aa2416acad59a
+>>>>>>> origin/master
 	  ((emacs
 	    (25)))
 	  "Implementation of streams" single
@@ -759,7 +777,11 @@
 	 ((:url . "http://elpa.gnu.org/packages/xclip.html")
 	  (:keywords "convenience" "tools"))])
  (xelb .
+<<<<<<< HEAD
        [(0 3)
+=======
+       [(0 2)
+>>>>>>> origin/master
 	((emacs
 	  (24 4))
 	 (cl-generic
