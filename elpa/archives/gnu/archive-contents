@@ -91,10 +91,28 @@
 	  ((seq
 	    (1 11)))
 =======
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+	 [(0 5 1)
+	  ((seq
+	    (1 11)))
+=======
+=======
+>>>>>>> origin/master
+>>>>>>> Stashed changes
 	 [(0 3)
 	  ((seq
 	    (1 9)))
 >>>>>>> origin/master
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
+>>>>>>> origin/master
+>>>>>>> Stashed changes
 	  "Highlight the cursor whenever the window scrolls" single
 	  ((:url . "https://github.com/Malabarba/beacon")
 	   (:keywords "convenience"))])
@@ -261,8 +279,22 @@
 <<<<<<< HEAD
 	    [(0 1)
 =======
+<<<<<<< Updated upstream
 	    [(0 0 3)
 >>>>>>> origin/master
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+	    [(0 1)
+=======
+	    [(0 0 3)
+>>>>>>> origin/master
+>>>>>>> origin/master
+=======
+	    [(0 0 3)
+>>>>>>> origin/master
+>>>>>>> origin/master
+>>>>>>> Stashed changes
 	     ((emacs
 	       (25)))
 	     "Expression based incremental search for emacs-lisp-mode" single
@@ -297,6 +329,13 @@
 		  "Emacs mode based on common modern interface and ergonomics." tar
 		  ((:keywords "convenience")
 		   (:url . "https://github.com/ergoemacs/ergoemacs-mode"))])
+ (exwm .
+       [(0 1)
+	((xelb
+	  (0 3)))
+	"Emacs X Window Manager" tar
+	((:keywords "unix")
+	 (:url . "https://github.com/ch11ng/exwm"))])
  (f90-interface-browser .
 			[(1 1)
 			 nil "Parse and browse f90 interfaces" single
@@ -636,11 +675,27 @@
 	 [(2 0 2)
 =======
 <<<<<<< HEAD
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+	 [(2 0 2)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> origin/master
+>>>>>>> Stashed changes
 	 [(2 0 1)
 =======
 	 [(1 0 1)
 >>>>>>> 521e9ddd3fec1b19176957c1998aa2416acad59a
 >>>>>>> origin/master
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
+>>>>>>> origin/master
+>>>>>>> Stashed changes
 	  ((emacs
 	    (25)))
 	  "Implementation of streams" single
@@ -780,8 +835,22 @@
 <<<<<<< HEAD
        [(0 3)
 =======
+<<<<<<< Updated upstream
        [(0 2)
 >>>>>>> origin/master
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+       [(0 3)
+=======
+       [(0 2)
+>>>>>>> origin/master
+>>>>>>> origin/master
+=======
+       [(0 2)
+>>>>>>> origin/master
+>>>>>>> origin/master
+>>>>>>> Stashed changes
 	((emacs
 	  (24 4))
 	 (cl-generic
