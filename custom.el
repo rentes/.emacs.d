@@ -7,6 +7,15 @@
 (set-selection-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
 (set-buffer-file-coding-system 'unix) ; removing Byte Order Mark (BOM)
+
+
+; ====================================================================
+; proxy
+; ====================================================================
+(setq url-proxy-services '(("no_proxy" . "efacec\\.com")
+                           ("http" . "172.18.200.136:3128")
+			   ("https" . "172.18.200.136:3128")))
+
 ; ====================================================================
 ; other customizations
 ; ====================================================================
@@ -169,6 +178,7 @@ If the file is emacs lisp, run the byte compiled version if exist."
 ; fci
 ; ====================================================================
 (require 'fill-column-indicator)
+(setq fci-rule-column 80)
 (add-hook 'after-change-major-mode-hook 'fci-mode)
 
 ; ====================================================================
@@ -186,6 +196,14 @@ If the file is emacs lisp, run the byte compiled version if exist."
 (require 'auto-complete-config)
 (ac-config-default)
 (global-auto-complete-mode t)
+
+; ====================================================================
+; w3m
+; ====================================================================
+(setq browse-url-browser-function 'w3m-browse-url)
+(autoload 'w3m-browse-url "w3m" "Ask a WWW browser to show a URL." t)
+;; optional keyboard short-cut
+(global-set-key "\C-xm" 'browse-url-at-point)
 
 ; ====================================================================
 ; Emoji
