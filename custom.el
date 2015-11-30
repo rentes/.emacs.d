@@ -8,21 +8,13 @@
 (prefer-coding-system 'utf-8)
 (set-buffer-file-coding-system 'unix) ; removing Byte Order Mark (BOM)
 
-
-; ====================================================================
-; proxy
-; ====================================================================
-(setq url-proxy-services '(("no_proxy" . "efacec\\.com")
-                           ("http" . "172.18.200.136:3128")
-			   ("https" . "172.18.200.136:3128")))
-
 ; ====================================================================
 ; other customizations
 ; ====================================================================
 (setq auto-save-default nil)
 (delete-selection-mode 1)
 (global-hl-line-mode 1)
-(global-linum-mode 1)
+(global-linum-mode t) ; enable line numbers globally
 (column-number-mode 1)
 (setq show-paren-delay 0)
 (show-paren-mode t)
@@ -54,13 +46,6 @@
 (when (fboundp 'global-font-lock-mode)
   (global-font-lock-mode t))
 ; ====================================================================
-; An alist of archives from which to fetch
-; ====================================================================
-(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-			 ("marmalade" . "http://marmalade-repo.org/packages/")
-			 ("melpa" . "http://melpa.milkbox.net/packages/")
-			 ("elpa" . "http://tromey.com/elpa/")))
-; ====================================================================
 ; backup policy
 ; ====================================================================
 (setq make-backup-files nil) ; stop creating those backup~ files
@@ -88,11 +73,12 @@
 ; ====================================================================
 ; load theme
 ; ====================================================================
-(require 'moe-theme)
+(load-theme 'material t) ; load material theme
+; (require 'moe-theme)
 ;(require 'moe-theme-switcher)
-(moe-dark)
-(require 'powerline)
-(powerline-moe-theme)
+; (moe-dark)
+; (require 'powerline)
+; (powerline-moe-theme)
 
 ; ====================================================================
 ; Org Mode customizations for better appearance

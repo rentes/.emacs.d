@@ -8,7 +8,7 @@
 ; ==========================================================================
 ; no splash screen
 ; ==========================================================================
-(setq inhibit-startup-message t)
+(setq inhibit-startup-message t) ; hide the startup message
 ; ==========================================================================
 ; load-path (added elpa/ and lisp/ recursively)
 ; ==========================================================================
@@ -17,6 +17,24 @@
 (let ((default-directory "~/.emacs.d/lisp/"))
       (normal-top-level-add-subdirs-to-load-path))
 (add-to-list 'load-path "~/.emacs.d/lisp")
+
+(require 'package)
+(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+			 ("marmalade" . "http://marmalade-repo.org/packages/")
+			 ("melpa" . "http://melpa.milkbox.net/packages/")
+			 ("elpa" . "http://tromey.com/elpa/")))
+(package-initialize)
+(when (not package-archive-contents)
+  (package-refresh-contents))
+(defvar myPackages
+  '(better-defaults
+    material-theme))
+
+(mapc #'(lambda (package)
+	  (unless (package-installed-p package)
+	    (package-install package)))
+      myPackages)
+
 ; ==========================================================================
 ; Variables configured via the interactive 'customize' interface
 ; get recorded on custom.el file
