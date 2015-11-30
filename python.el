@@ -20,3 +20,7 @@
 ; try to automagically figure out indentation
 (setq py-smart-indentation t)
 
+(elpy-enable)
+(elpy-use-ipython)
+(require 'py-autopep8)
+(add-hook 'elpy-mode-hook 'py-autopep8-enable-on-save)

@@ -28,6 +28,10 @@
   (package-refresh-contents))
 (defvar myPackages
   '(better-defaults
+    ein
+    elpy
+    flycheck
+    py-autopep8
     material-theme))
 
 (mapc #'(lambda (package)
