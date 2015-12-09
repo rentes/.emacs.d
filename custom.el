@@ -9,6 +9,13 @@
 (set-buffer-file-coding-system 'unix) ;; removing Byte Order Mark (BOM)
 
 ;;====================================================================
+;; proxy
+;;====================================================================
+(setq url-proxy-services '(("no_proxy" . "efacec\\.com")
+                           ("http" . "172.18.200.136:3128")
+			   ("https" . "172.18.200.136:3128")))
+
+;;====================================================================
 ;; other customizations
 ;;====================================================================
 (setq auto-save-default nil)
@@ -172,13 +179,6 @@ If the file is emacs lisp, run the byte compiled version if exist."
 ;;====================================================================
 (require 'ido)
 (ido-mode t)
-
-;;====================================================================
-;; Flycheck
-;;====================================================================
-(when (require 'flycheck nil t)
-  (setq elpy-modules (delq 'elpy-module-flymake elpy-modules))
-  (add-hook 'elpy-mode-hook 'flycheck-mode))
 
 ;;====================================================================
 ;; Auto-complete mode
