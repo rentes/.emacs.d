@@ -19,8 +19,8 @@ tramp
 # eshell files
 /eshell/*
 
-# elpa packages
-/elpa/
+# everything under elpa packages
+elpa/**
 
 # reftex files
 *.rel
@@ -46,3 +46,4 @@ tramp
 /var/
 projectile*
 ido.last
+
